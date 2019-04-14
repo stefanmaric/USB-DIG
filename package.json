@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "rollup -c",
+    "build:es5": "npm run build && babel bundle.js -o bundle_es5.js && mv bundle_es5.js bundle.js"
+  },
+  "dependencies": {
+    "@bundled-es-modules/pdfjs-dist": "^2.1.266-rc",
+    "asn1js": "^2.0.22",
+    "pdfjs-dist": "^2.0.943",
+    "pkijs": "^2.1.76",
+    "pvutils": "^1.0.17"
+  },
+  "devDependencies": {
+    "rollup": "^1.10.0",
+    "rollup-plugin-node-resolve": "^4.2.3"
+  }
+}
